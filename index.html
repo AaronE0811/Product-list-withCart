@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./index.css">
+  <title>Frontend Mentor | Product list with cart</title>
+
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+
+    <div class="product">
+      <h1 id="title">Desserts</h1>
+      <div id="products"></div>
+    </div>
+
+    <div class="cart">
+      <div class="titleCart">
+        <h1>Your cart(0)</h1>
+      </div>
+      <div class="cartItem">
+
+      </div>
+      <div class="total" hidden>
+
+        <p id="textTotal">Order total</p>
+
+        <div id="priceTotal"></div>
+      </div>
+      <div class="cartVacio">
+        <img src="./assets/images/illustration-empty-cart.svg" alt="">
+        <div class="textoVacio">Your added items will appear here</div>
+      </div>
+
+      <p class="textoAA" hidden>
+        <img class="text" src="./assets/images/icon-carbon-neutral.svg" alt="">
+        This is a <strong> carbon-neutral </strong> delivery
+      </p>
+
+      <button hidden class="btnConfirmar" type="button">Confirm order</button>
+    </div>
+
+  </main>
+
+ <div class="modalCart">
+    <div class="modalContent">
+      <img id="confirmed" src="./assets/images/icon-order-confirmed.svg" alt="">
+      <div class="titleOrder">
+        <h1>Order Confirmed</h1>
+        <p>We Hope You Enjoy Your Order!</p>
+      </div>
+      <div class="productosCart"></div>
+      <button id="btnNew">Start New Order</button>
+    </div>
+ </div>
+  <script src="./index.js"></script>
+
+</body>
+
+</html>
+
+
